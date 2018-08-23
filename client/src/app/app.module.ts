@@ -8,23 +8,21 @@ import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from '@angular/platform-browser';
 
-// page
-import { NewOrNotPage } from "../pages/new-or-not/new-or-not";
-import { LogInPage } from "../pages/log-in/log-in";
-import { SignUpPage } from "../pages/sign-up/sign-up";
-import { FillEmailPage } from "../pages/fill-email/fill-email";
-import { SendEmailPage } from "../pages/send-email/send-email";
-import { RegisterProfilePage } from "../pages/register-profile/register-profile";
-import { EditProfilePage } from "../pages/edit-profile/edit-profile";
-import { SetQuestionPage } from "../pages/set-question/set-question";
-import { AnswerQuestionPage } from "../pages/answer-question/answer-question";
-import { HomePage } from '../pages/home/home';
-import { AboutPage } from '../pages/about/about';
-import { MsgContentPage } from "../pages/msg-content/msg-content";
-import { UserPage } from "../pages/user/user";
-
 // page module
 import { IntroPageModule } from '../pages/intro/intro.module';
+import { NewOrNotPageModule } from "../pages/new-or-not/new-or-not.module";
+import { LogInPageModule } from "../pages/log-in/log-in.module";
+import { SignUpPageModule } from "../pages/sign-up/sign-up.module";
+import { FillEmailPageModule } from "../pages/fill-email/fill-email.module";
+import { SendEmailPageModule } from "../pages/send-email/send-email.module";
+import { RegisterProfilePageModule } from "../pages/register-profile/register-profile.module";
+import { EditProfilePageModule } from "../pages/edit-profile/edit-profile.module";
+import { SetQuestionPageModule } from "../pages/set-question/set-question.module";
+import { AnswerQuestionPageModule } from "../pages/answer-question/answer-question.module";
+import { HomePageModule } from '../pages/home/home.module';
+import { AboutPageModule } from '../pages/about/about.module';
+import { MsgContentPageModule } from "../pages/msg-content/msg-content.module";
+import { UserPageModule } from "../pages/user/user.module";
 
 // ionic-native
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -45,19 +43,6 @@ import { HomeService } from "../pages/home/home.service";
 @NgModule({
 	declarations: [
 		MyApp,
-		AboutPage,
-		HomePage,
-		NewOrNotPage,
-		LogInPage,
-		SignUpPage,
-		FillEmailPage,
-		SendEmailPage,
-		RegisterProfilePage,
-		UserPage,
-		EditProfilePage,
-		AnswerQuestionPage,
-		MsgContentPage,
-		SetQuestionPage,
 	],
 	imports: [
 		BrowserModule,
@@ -66,23 +51,23 @@ import { HomeService } from "../pages/home/home.service";
 		RouterModule,
 		IonicModule.forRoot(MyApp),
 		IntroPageModule,
+		AboutPageModule,
+		HomePageModule,
+		NewOrNotPageModule,
+		LogInPageModule,
+		SignUpPageModule,
+		FillEmailPageModule,
+		SendEmailPageModule,
+		RegisterProfilePageModule,
+		UserPageModule,
+		EditProfilePageModule,
+		AnswerQuestionPageModule,
+		MsgContentPageModule,
+		SetQuestionPageModule,
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
 		MyApp,
-		AboutPage,
-		HomePage,
-		NewOrNotPage,
-		LogInPage,
-		SignUpPage,
-		FillEmailPage,
-		SendEmailPage,
-		RegisterProfilePage,
-		UserPage,
-		EditProfilePage,
-		AnswerQuestionPage,
-		MsgContentPage,
-		SetQuestionPage,
 	],
 	providers: [
 		StatusBar,
