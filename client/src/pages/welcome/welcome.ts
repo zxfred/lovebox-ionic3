@@ -5,10 +5,10 @@ import { SignUpPage } from "../sign-up/sign-up";
 
 @IonicPage()
 @Component({
-  selector: 'page-new-or-not',
-  templateUrl: 'new-or-not.html',
+  selector: 'page-welcome',
+  templateUrl: 'welcome.html',
 })
-export class NewOrNotPage {
+export class WelcomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -22,7 +22,7 @@ export class NewOrNotPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NewOrNotPage');
+    console.log('ionViewDidLoad welcomePage');
   }
 
 }

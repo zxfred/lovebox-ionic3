@@ -1,0 +1,29 @@
+page-welcome {
+	height: 100%;
+	#logo-part {
+		background-color: #f47672;
+		height: 80%;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h2 {
+			color: white;
+		}
+	}
+	#logo-img {
+		display: block
+	}
+	#button-part {
+		background-color: #FABBB0;
+		height: 20%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.btn {
+			text-transform: none;
+			border-radius: 3px !important;
+			box-shadow: none;
+		}
+	}
+}

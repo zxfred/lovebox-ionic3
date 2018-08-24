@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { NewOrNotPage } from './new-or-not';
+import { WelcomePage } from './welcome';
 
 @NgModule({
   declarations: [
-    NewOrNotPage,
+    WelcomePage,
   ],
   imports: [
-    IonicPageModule.forChild(NewOrNotPage),
+    IonicPageModule.forChild(WelcomePage),
   ],
   exports: [
-    NewOrNotPage
+    WelcomePage
   ]
 })
-export class NewOrNotPageModule {}
+export class WelcomePageModule {}

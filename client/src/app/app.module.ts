@@ -3,14 +3,13 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 // angular module
-import { RouterModule } from '@angular/router';
 import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from '@angular/platform-browser';
 
 // page module
 import { IntroPageModule } from '../pages/intro/intro.module';
-import { NewOrNotPageModule } from "../pages/new-or-not/new-or-not.module";
+import { WelcomePageModule } from "../pages/welcome/welcome.module";
 import { LogInPageModule } from "../pages/log-in/log-in.module";
 import { SignUpPageModule } from "../pages/sign-up/sign-up.module";
 import { FillEmailPageModule } from "../pages/fill-email/fill-email.module";
@@ -45,15 +44,15 @@ import { HomeService } from "../pages/home/home.service";
 		MyApp,
 	],
 	imports: [
+		IonicModule.forRoot(MyApp),
 		BrowserModule,
 		HttpModule,
 		HttpClientModule,
-		RouterModule,
-		IonicModule.forRoot(MyApp),
+
 		IntroPageModule,
 		AboutPageModule,
 		HomePageModule,
-		NewOrNotPageModule,
+		WelcomePageModule,
 		LogInPageModule,
 		SignUpPageModule,
 		FillEmailPageModule,
